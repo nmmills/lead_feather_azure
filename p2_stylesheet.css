@@ -1,0 +1,778 @@
+@charset "UTF-8";
+/*----------------------------------LEAD AND FEATHER CSS SPREAD SHEET*/
+/* Colors for site with combos
+BG - Lt Blue #adc5c7
+    Tan #e1e1cc
+    Dk Peach #B38e82
+Text - Dkblue #2d3742
+        Red #660516
+
+        border: 2px solid;
+*/
+/* --------------------Nave Style Bar--------------*/
+.main_nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #e1e1cc;
+    padding: .5px 0 70px 0;
+    margin:  0;
+    align-items: self-end;
+}
+.main_nav a {
+    color: #2d3742;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.main_nav a:hover {
+    background: #adc5c7;
+    color: #660516;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+
+/*---------------------page styles----------------------*/
+.logo {
+    margin-right:auto;
+    height: 45px;
+    padding: 3px 0 3px 5px; 
+}
+/*-----------------------Hero Image________________________*/
+.hero_image {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/camp_night.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.centered_header {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+ 
+    text-align: center;
+    color: #adc5c7;
+    font-family:  bold Basketville, serif;
+    font-weight: bold;
+    font-size: 3em
+    
+}
+
+
+
+
+.button {
+    background-color: #adc5c7;
+    
+    color: #2d3742;
+    display: inline-block;
+    font-size: 18px;
+    margin: 6px 3px;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+   
+}
+
+/*-----------------------------------images-------------------*/
+
+img { 
+    max-width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#2d3742;
+    background-color: #e1e1cc;
+    
+    
+} 
+    
+h1{ color: #660516;
+    font: bold 4em Basketville, serif;
+    text-shadow: .05em .05em .05em #B38e82; 
+    text-align: center; 
+}
+h2 {
+    font: bold 2.75em Basketville, serif;
+    color: #2d3742;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    text-shadow: .05em .05em .05em #B38e82;
+    text-align: center;
+    
+}
+
+h3 {
+   text-align: center;
+}
+
+
+h4 {
+    text-align: center;
+    font: bold 2em Basketville, serif;
+    color:#2d3742;
+}
+
+h5 {
+    text-align: center;
+    font: bold 1.25em Basketville, serif;
+    color:#2d3742;
+
+}
+
+
+
+/*---------------------Grid - index_______________________*/
+
+#index_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    'welcome    welcome     welcome'
+    'camp1      camp2       camp3'
+    'together   together    together'
+    'about      about       about'
+    'info1      info3       info2'
+    'update     update      update'
+    ;
+    justify-content: center;
+    background-color: #e1e1cc ;
+    margin: 0 auto;
+}
+
+#welcome {
+    grid-area: welcome;
+    object-fit: fill;
+    text-align: center;
+}
+#camp1 {
+    grid-area: camp1;
+    object-fit: cover;
+    text-align: center;
+}
+#camp2 {
+    grid-area: camp2;
+    object-fit: cover;
+    text-align: center;
+}
+#camp3 {
+    grid-area: camp3;
+    object-fit: cover;
+    text-align: center;
+}
+
+#together {
+    grid-area: together;
+    object-fit: scale-down;
+    text-align: center;
+}
+#about {
+    grid-area: about;
+    object-fit: cover;
+    text-align: center;
+}
+#info1 {
+    grid-area: info1;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+#info3 {
+    grid-area: info3;
+    object-fit: scale-down;
+    width: 65%;
+    text-align: center;
+}
+#info2 {
+    grid-area: info2;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+#update {
+    grid-area: update;
+    object-fit: cover;
+    text-align: center;
+}
+
+#welcome {
+    margin: 0px 45px 0px 30px;
+    padding: 60px 0px 60px 0px;
+}
+
+#camp1, #camp2, #camp3 {
+    margin: 20px;
+  
+}
+
+#together {
+    margin: 0px 50px 0px 50px;
+    padding: 0px 300px 0px 300px;
+}
+#about {
+    margin: 5px;
+}
+#info1, #info2, #info3 {
+    margin: 40px;
+}
+
+
+#update {
+    padding: 0px 0px 40px 0px;
+    
+}
+.facebook-icon {
+    width: 100px;
+}
+
+
+
+
+
+
+  /*----------------about_grid-----------------------*/
+
+    #about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, auto);
+    grid-template-areas: 
+    'welcome    welcome     welcome'
+    'mills      mills       mills'
+    'mills1     mills2      mills3'
+    'mills_st   mills_st    mills_st'
+    'stefani    stefani     stefani'
+    'stefani1   stefani2    stefani3'
+    'stefani_st stefani_st  stefani_st'
+    'baker      baker       baker'
+    'baker1     baker2      baker3'
+    'baker_st   baker_st    baker_st'
+    'robson     robson      robson'
+    'robson1    robson2     robson3'
+    'robson_st  robson_st   robson_st'
+    ;
+    justify-content: center;
+    background-color: #e1e1cc;
+    margin: 0 auto;
+    background-repeat: repeat;
+}
+#mills {
+    grid-area: mills;
+    text-align: center;
+    border-top-style: double;
+    background-color: #b38e82;
+}
+#mills1 {
+    grid-area: mills1;
+    object-fit: auto;
+   
+
+}
+#mills2 {
+    grid-area: mills2;
+    justify-items: center;
+    align-items: center;
+    margin-top: 65px;
+   
+}
+
+#mills3 {
+    grid-area: mills3;
+    object-fit: auto;
+  
+    
+}
+#mills_st {
+    grid-area: mills_st;
+    text-align: center;
+    background-color: #B38e82;
+}
+
+#stefani {
+    grid-area: stefani;
+    text-align: center;
+    background-color: #adc5c7;
+}
+
+#stefani1 {
+    grid-area: stefani1;
+    object-fit: fill;
+}
+
+#stefani2 {
+    grid-area: stefani2;
+    justify-items: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+#stefani3 {
+    grid-area: stefani3;
+    object-fit: fill;
+    
+}
+#stefani_st {
+    grid-area: stefani_st;
+    text-align: center;
+    background-color: #adc5c7;
+
+}
+
+#baker {
+    grid-area: baker;
+    text-align: center;
+    background-color: #B38e82;
+}
+
+#baker1 {
+    grid-area: baker1;
+    object-fit: auto;
+}
+
+#baker2 {
+    grid-area: baker2;
+    justify-items: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+#baker3 {
+    grid-area: baker3;
+    object-fit: fill;
+    
+}
+#baker_st {
+    grid-area: baker_st;
+    text-align: center;
+    background-color: #B38e82;
+ 
+}
+
+#robson {
+    grid-area: robson;
+    text-align: center;
+    background-color: #adc5c7;
+}
+
+#robson1 {
+    grid-area: robson1;
+    object-fit: fill;
+}
+
+#robson2 {
+    grid-area: robson2;
+    justify-items: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+#robson3 {
+    grid-area: robson3;
+    object-fit: fill;
+    
+}
+#robson_st {
+    grid-area: robson_st;
+    text-align: center;
+    background-color: #adc5c7;
+    
+}
+
+#mills1, #mills2, #mills3, #stefani1, #stefani2, #stefani3, 
+#baker1, #baker2, #baker3, #robson1, #robson2, #robson3 {
+    padding: 10px 20px 0px 20px;
+    
+}
+
+#stefani, #robson {
+    color: #660516;
+    font-size: xx-large;
+
+}
+#mills, #baker {
+    color: #2d3742;
+    font-size: xx-large;
+
+}
+#mills, #stefani, #baker, #robson {
+    border-top-style: double;
+    border-color: #660516;
+    border-width: 20px;
+    padding-top: 30px;
+}
+
+#mills_st, #stefani_st, #baker_st, #robson_st {
+
+   padding: 10px 20px 0px 20px;
+
+}
+
+
+/*------------------------------Activity.html____________________*/
+
+
+
+
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    gap: 25px;   
+    height: auto;
+    
+    background-color: #cfeaec;
+}
+
+.activities img {
+
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 10px;
+  
+
+}
+
+.activities img:hover {
+    transform: scale(1.07);
+}
+
+
+
+/*-----------------------Event page with Countdown---------------------*/
+
+.flyer {
+    max-width: 800px; /* Limits the width for readability */
+    margin: 20px auto; /* Centers the flyer and adds vertical spacing */
+    padding: 20px; /* Adds inner spacing around the content */
+    text-align: center; /* Centers all text inside the flyer */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 10px; /* Rounds the corners */
+    
+}
+
+.activities_list {
+    list-style-type: none; /* Removes default bullet points */
+    text-align: center; /* Centers the text of the list items */
+    margin: 0 auto; /* Centers the list container horizontally */
+    padding: 0; /* Removes default padding */
+    font-family: Arial, sans-serif; /* Optional: Sets a clean font */
+    font-size: 1.2em; /* Optional: Increases the font size */
+    line-height: 1.5; /* Optional: Adds spacing between lines */
+}
+
+.activities_list li {
+    margin: 10px 0; /* Adds spacing between list items */
+}
+
+
+/*----------COUNT DOWN ON EVENT PAGE----------------*/
+
+.image-countdown body {
+    margin: fit-content;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Optional background color */
+    font-family: Basketville, serif;
+    text-align: center;
+}
+
+/* Center container for the image and countdown */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Image and countdown container */
+.image-countdown {
+    position: relative; /* Enables positioning of the countdown */
+    /*display: inline-block;*/
+    width: 100%;
+    max-width: 600px; /* Adjust the max width as needed */
+    margin: auto;
+}
+
+/* Responsive image styling */
+.image-countdown img {
+    width: 100%;
+    height: auto;
+}
+
+/* Countdown styling */
+#countdown {
+    position: absolute; /* Position over the image */
+    top: 50%; /* Vertical center */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    font-size: 2.75em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Readable on varied backgrounds */
+    pointer-events: none; /* Prevent text from interfering with image clicks */
+}
+/*---------------------media queris always put at the end_________________
+
+/*-----min vs. max width This says it will change at 850 and below------*/
+@media screen and (max-width: 850px) { 
+
+    #index_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        'welcome    welcome     welcome'
+        'camp1      camp2       camp3'
+        'together   together    together'
+        'about      about       about'
+        'info1      info3       info2'
+        'update     update      update'
+        ;
+        justify-content: center;
+        background-color: #e1e1cc ;
+        margin: 0 auto;
+    }
+    #camp3 {
+        grid-area: camp3;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        object-fit: scale-down;
+    
+    }
+    
+    #info2  {
+        grid-area: info2;
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+        object-fit: scale-down;
+    
+    } 
+    body {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /*img {
+        float: inherit;
+    }*/
+
+
+#about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, auto);
+    grid-template-areas: 
+    'welcom     welcome     welcome'
+    'mills      mills       mills'
+    'mills1     mills2      mills3'
+    'mills_st   mills_st    mills_st'
+    'stefani    stefani     stefani'
+    'stefani1   stefani2    stefani3'
+    'stefani_st stefani_st  stefani_st'
+    'baker      baker       baker'
+    'baker1     baker2      baker3'
+    'baker_st   baker_st    baker_st'
+    'robson     robson      robson'
+    'robson1    robson2     robson3'
+    'robson_st  robson_st   robson_st'
+    ;
+    justify-content: left;
+    margin: 0 auto;
+ 
+}
+
+#mills2, #stephani2, #baker2, #robson2 {
+    
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+   
+}
+}
+/*---------------tablet size grid settings------------*/
+@media screen and (max-width: 650px) { 
+
+
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+    #index_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+        'welcome    welcome'
+        'camp1      camp2'       
+        'camp3      camp3'
+        'together   together'
+        'about      about'
+        'info1      info3'      
+        'info2      info2'
+        'update     update'
+        ;
+        justify-content: center;
+        background-color: #e1e1cc ;
+        margin: 0 auto;
+    }
+
+    #about_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(17, auto);
+        grid-template-areas: 
+        'welcome     welcome'
+        'mills      mills'
+        'mills1     mills2'      
+        'mills3     mills3'    
+        'mills_st   mills_st'
+        'stefani    stefani'
+        'stefani1   stefani2'    
+        'stefani3   stefan3'
+        'stefani_st stefani_st'
+        'baker      baker'
+        'baker1     baker2'      
+        'baker3     baker3'
+        'baker_st   baker_st'
+        'robson     robson'
+        'robson1    robson2'     
+        'robson3     robson3'
+        'robson_st  robson_st'
+        ;
+        justify-content: left;
+        margin: 0 auto;
+      
+    }
+    .main_nav {
+        display: flexbox; 
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+    
+      .main_nav a li {
+        padding: 15px;
+        border-top: 1px solid #555;
+      }
+    
+}
+/*---------------phone size grid settings------------*/
+@media screen and (max-width: 450px) { 
+
+ 
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+    #index_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas: 
+        'welcome'
+        'camp1'      
+        'camp2'       
+        'camp3'
+        'together'
+        'about'
+        'info1'      
+        'info3'      
+        'info2'
+        'update'
+        ;
+        justify-content: center;
+        background-color: #e1e1cc ;
+        margin: 0 auto;
+    }
+    .logo {
+        display: none;
+    }
+    #together {
+        display: none;
+    }
+    #about {
+        margin: 5px;
+        padding: 0px 10px 0px 10px;
+    }
+    .facebook-icon {
+        width: 40px;
+    }
+
+#about_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(17, auto);
+    grid-template-areas: 
+    'welcome'
+    'mills'
+    'mills1'     
+    'mills2'         
+    'mills_st'
+    'stefani'
+    'stefani1'   
+    'stefani2'    
+    'stefani_st'
+    'baker'
+    'baker1'     
+    'baker2'      
+    'baker_st'
+    'robson'
+    'robson1'    
+    'robson2'     
+    'robson_st'
+    ;
+    justify-content: left;
+    margin: 0 auto;
+  
+}
+
+.main_nav {
+    display: flexbox; 
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .main_nav a li {
+    padding: 15px;
+    border-top: 1px solid #555;
+  }
+
+}
+
+
